@@ -9,7 +9,7 @@
 		"lint": "eslint .",
 		"prettier:fix": "prettier -w \"src/**/*.{js,jsx}\"",
 		"prettier:check": "prettier -c \"src/**/*.{js,jsx}\"",
-		"prepare": "npm run rollup",
+		"prepare": "husky install && npm run rollup",
 		"prepublishOnly": "npm run lint",
 		"preversion": "npm run lint",
 		"version": "npm run prettier:fix && git add -A src",
@@ -54,9 +54,16 @@
 		"eslint-plugin-react-hooks": "^4.2.0",
 		"prettier": "^2.6.2",
 		"rollup": "^2.70.2",
-		"rollup-plugin-terser": "^7.0.2"
+		"rollup-plugin-terser": "^7.0.2",
+		"husky": "^7.0.4",
+		"pretty-quick": "^3.1.3"
 	},
 	"files": [
 		"lib/**/*"
-	]
+	],
+	"husky": {
+		"hooks": {
+			"pre-commit": "npx pretty-quick --staged ng lint:fix ng test"
+		}
+	}
 }
