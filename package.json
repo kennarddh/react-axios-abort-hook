@@ -1,7 +1,7 @@
 {
 	"name": "@kennarddh/react-axios-abort-hook",
 	"version": "1.0.0",
-	"description": "Abort axios requests on component unmount\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+	"description": "Abort axios requests on component unmount",
 	"main": "lib/bundle.cjs.js",
 	"module": "lib/bundle.esm.js",
 	"scripts": {
