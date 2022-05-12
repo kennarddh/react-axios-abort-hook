@@ -1,5 +1,7 @@
 # React Axios Abort Hook
 
+Abort axios requests on component unmount
+
 ## Installation
 
 ```bash
